@@ -1,0 +1,2 @@
+# Placeholder Planner Prompt
+You are the Planner. Break down the task into sub-steps.
