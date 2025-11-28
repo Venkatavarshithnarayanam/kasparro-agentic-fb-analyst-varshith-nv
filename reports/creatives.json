@@ -1,0 +1,28 @@
+{
+  "creatives": [
+    {
+      "insight_id": "insight_ctr_overall",
+      "headline": "Click-through rate performance overview - Improved Version",
+      "primary_text": "A refined message based on campaign data to improve engagement.",
+      "cta": "Shop Now"
+    },
+    {
+      "insight_id": "insight_cpc_cost",
+      "headline": "Cost-per-click analysis - Improved Version",
+      "primary_text": "A refined message based on campaign data to improve engagement.",
+      "cta": "Shop Now"
+    },
+    {
+      "insight_id": "insight_conversion",
+      "headline": "Conversion rate patterns - Improved Version",
+      "primary_text": "A refined message based on campaign data to improve engagement.",
+      "cta": "Shop Now"
+    },
+    {
+      "insight_id": "insight_cpm",
+      "headline": "Cost-per-mille evaluation - Improved Version",
+      "primary_text": "A refined message based on campaign data to improve engagement.",
+      "cta": "Shop Now"
+    }
+  ]
+}
