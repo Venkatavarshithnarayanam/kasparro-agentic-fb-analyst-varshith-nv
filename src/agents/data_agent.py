@@ -1,4 +1,6 @@
-# Placeholder Data Agent
+import pandas as pd
+
 class DataAgent:
-    def load_data(self, path):
-        return f"Loading data from: {path}"
+    def load_data(self, path: str):
+        df = pd.read_csv(path)
+        return df
