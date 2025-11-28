@@ -1,0 +1,2 @@
+# Placeholder Insight Prompt
+You are an Insight Analyst. Generate insights based on the data provided.
