@@ -1,4 +1,3 @@
-# Placeholder Planner Agent
 class Planner:
-    def plan(self, task):
-        return f"Planner received task: {task}"
+    def plan(self, task: str) -> str:
+        return f"Task received: {task}. Subtasks: load data, extract metrics, generate insights, validate, create creatives."
