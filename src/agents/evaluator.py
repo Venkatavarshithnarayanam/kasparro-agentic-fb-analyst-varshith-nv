@@ -1,27 +1,40 @@
-import numpy as np
+from ..logging_config import get_logger
+
+logger = get_logger(__name__)
 
 class Evaluator:
-    def evaluate(self, insights_data):
-        insights = insights_data.get("insights", [])
+    def evaluate(self, insights: dict) -> dict:
+        """
+        Evaluates insights and adds a simple confidence score.
+        """
+        logger.info("Evaluator: Starting evaluation of insights...")
+
+        raw_insights = insights.get("insights", [])
         validated = []
 
-        for item in insights:
-            confidence = 0.0
+        if not raw_insights:
+            logger.warning("Evaluator: No insights received for evaluation.")
+            return {"validated_insights": []}
 
-            if "details" in item and isinstance(item["details"], str):
-                if any(char.isdigit() for char in item["details"]):
-                    confidence += 0.4
+        for ins in raw_insights:
+            value = ins.get("value", 0)
 
-            if "high_performers" in item and item.get("high_performers"):
-                confidence += 0.3
+            # Simple confidence score logic
+            if value > 0:
+                confidence = min(1.0, value * 10)
+            else:
+                confidence = 0.1  # fallback low confidence
 
-            if "low_performers" in item and item.get("low_performers"):
-                confidence += 0.3
+            validated_insight = {
+                "type": ins.get("type"),
+                "detail": ins.get("detail"),
+                "value": value,
+                "confidence": round(confidence, 4)
+            }
 
-            if confidence > 1:
-                confidence = 1
+            validated.append(validated_insight)
+            logger.info(f"Evaluator: Evaluated {ins['type']} → confidence {confidence}")
 
-            item["confidence"] = round(confidence, 2)
-            validated.append(item)
+        logger.info(f"Evaluator: Completed evaluation of {len(validated)} insights")
 
         return {"validated_insights": validated}
