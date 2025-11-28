@@ -51,7 +51,6 @@ kasparro-agentic-fb-analyst-varshith-nv/
 │
 └── requirements.txt
 
-
 pip install -r requirements.txt
 
 python src/run.py
