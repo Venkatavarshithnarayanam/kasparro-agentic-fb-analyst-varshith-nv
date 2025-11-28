@@ -1,0 +1,31 @@
+{
+  "validated_insights": [
+    {
+      "id": "insight_ctr_overall",
+      "title": "Click-through rate performance overview",
+      "details": "Average CTR is 1.85%.",
+      "high_performers": [0.0321, 0.0294, 0.0289],
+      "low_performers": [0.0012, 0.0018, 0.0021],
+      "confidence": 1
+    },
+    {
+      "id": "insight_cpc_cost",
+      "title": "Cost-per-click analysis",
+      "details": "Average CPC is ₹12.44.",
+      "confidence": 0.4
+    },
+    {
+      "id": "insight_conversion",
+      "title": "Conversion rate patterns",
+      "details": "Average conversion rate is 3.95%.",
+      "top_conversion_rates": [0.21, 0.18, 0.17],
+      "confidence": 0.7
+    },
+    {
+      "id": "insight_cpm",
+      "title": "Cost-per-mille evaluation",
+      "details": "Average CPM is ₹189.23.",
+      "confidence": 0.4
+    }
+  ]
+}
