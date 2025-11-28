@@ -17,32 +17,33 @@ The solution follows a simple, modular structure using lightweight agents:
 
 The final outputs are stored in the `reports/` directory.
 
----
-
 ## 2. Repository Structure
 
+```
 📁 kasparro-agentic-fb-analyst-varshith-nv
-┣ 📁 src
-┃ ┣ 📁 agents
-┃ ┃ ┣ 📄 planner.py
-┃ ┃ ┣ 📄 data_agent.py
-┃ ┃ ┣ 📄 insight_agent.py
-┃ ┃ ┣ 📄 evaluator.py
-┃ ┃ ┗ 📄 creative_generator.py
-┃ ┗ 📄 run.py
-┣ 📁 prompts
-┃ ┣ 📄 planner_base.txt
-┃ ┣ 📄 insight_base.txt
-┃ ┗ 📄 creative_base.txt
-┣ 📁 reports
-┃ ┣ 📄 insights.json
-┃ ┣ 📄 creatives.json
-┃ ┗ 📄 report.md
-┣ 📁 data
-┃ ┗ 📄 synthetic_fb_ads_undergarments.csv
-┣ 📁 config
-┃ ┗ 📄 config.yaml
-┗ 📄 requirements.txt
+ ┣ 📁 src
+ ┃ ┣ 📁 agents
+ ┃ ┃ ┣ 📄 planner.py
+ ┃ ┃ ┣ 📄 data_agent.py
+ ┃ ┃ ┣ 📄 insight_agent.py
+ ┃ ┃ ┣ 📄 evaluator.py
+ ┃ ┃ ┗ 📄 creative_generator.py
+ ┃ ┗ 📄 run.py
+ ┣ 📁 prompts
+ ┃ ┣ 📄 planner_base.txt
+ ┃ ┣ 📄 insight_base.txt
+ ┃ ┗ 📄 creative_base.txt
+ ┣ 📁 reports
+ ┃ ┣ 📄 insights.json
+ ┃ ┣ 📄 creatives.json
+ ┃ ┗ 📄 report.md
+ ┣ 📁 data
+ ┃ ┗ 📄 synthetic_fb_ads_undergarments.csv
+ ┣ 📁 config
+ ┃ ┗ 📄 config.yaml
+ ┗ 📄 requirements.txt
+```
+
 
 ## 4. Output Files
 
