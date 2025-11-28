@@ -67,4 +67,30 @@ These represent the final deliverables for the assignment.
 **Varshith N V**  
 Applied AI Engineer Assignment Submission
 
+Based on the feedback from Kasparro’s engineering team, the system was improved to move from a prototype to a more reliable, production-aware pipeline.
+
+P0 — Proof & Visibility
+
+Added structured logging across all agents
+
+Added retry and error handling for data loading
+
+Added schema validation and drift warnings
+
+Added pipeline-level logging and metrics output in run.py
+
+P1 — Hardening & Developer Experience
+
+Added unit tests for DataAgent, InsightAgent, and Evaluator
+
+Added a Makefile with make setup, make run, make test for easier workflows
+
+P2 — Stretch Improvements
+
+Added basic dataset schema expectations
+
+Added metrics.json export for observability
+
+These updates improve traceability, debugging, robustness, and developer experience.
+
 
